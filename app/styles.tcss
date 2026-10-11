@@ -1,0 +1,97 @@
+Screen {
+    background: #0a1512;
+    color: #d4e2dc;
+}
+
+Header {
+    background: #0a1512;
+    color: #6bdea5;
+}
+
+Footer {
+    background: #0a1512;
+    color: #a7bdb2;
+}
+
+#home {
+    width: 100%;
+    height: 100%;
+    align: center middle;
+}
+
+#logo {
+    width: auto;
+    height: 7;
+    color: #6bdea5;
+    text-style: bold;
+    content-align: center middle;
+}
+
+#tagline {
+    width: auto;
+    margin-top: 1;
+    margin-bottom: 1;
+    color: #d4e2dc;
+}
+
+#menu {
+    width: auto;
+    margin: 1 0 0 0;
+    color: #6bdea5;
+}
+
+#identity {
+    width: auto;
+    margin: 1 0 0 0;
+    color: #688577;
+}
+
+.screen-title {
+    width: 100%;
+    height: 3;
+    padding-top: 1;
+    padding-right: 2;
+    padding-left: 2;
+    color: #6bdea5;
+    text-style: bold;
+}
+
+#messages, #results {
+    height: 1fr;
+    margin: 0 2 1 2;
+    background: #08100e;
+}
+
+ListItem.message {
+    height: auto;
+    min-height: 4;
+    padding: 1 2;
+    border-bottom: solid #183128;
+}
+
+ListItem.message:hover, ListItem.message.-highlight {
+    background: #142820;
+}
+
+#empty, #search-status, #post-hint {
+    margin: 1 2;
+    color: #688577;
+}
+
+#query, #text {
+    height: 3;
+    margin: 0 2 1 2;
+    border: none;
+    background: #10201a;
+}
+
+#query:focus, #text:focus {
+    background: #173128;
+}
+
+#about {
+    width: 1fr;
+    height: auto;
+    margin: 1 2;
+    color: #d4e2dc;
+}
