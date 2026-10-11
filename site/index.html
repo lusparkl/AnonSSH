@@ -12,7 +12,7 @@
     <main>
         <section class="terminal-card">
             <h1>run it in your terminal</h1>
-            <a href="ssh://anonymous@79.76.38.187:8022">ssh -p 8022 anonymous@79.76.38.187</a>
+            <button id="command" type="button" aria-label="Copy SSH command">ssh -p 8022 anonymous@79.76.38.187</button>
         </section>
         <div class="keys" aria-hidden="true">
             <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
@@ -20,5 +20,14 @@
             <i></i><i></i><i></i><i></i>
         </div>
     </main>
+    <script>
+        const command = document.querySelector("#command")
+
+        command.addEventListener("click", async () => {
+            await navigator.clipboard.writeText(command.textContent)
+            command.classList.add("copied")
+            setTimeout(() => command.classList.remove("copied"), 400)
+        })
+    </script>
 </body>
 </html>
