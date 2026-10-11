@@ -73,9 +73,8 @@ h1 {
     text-transform: lowercase;
 }
 
-button {
+a {
     display: block;
-    width: 100%;
     padding: 1rem 1.15rem;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.055);
@@ -86,25 +85,18 @@ button {
     font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
     font-size: clamp(0.78rem, 2.25vw, 1rem);
     font-weight: 700;
-    text-align: left;
     text-decoration: none;
     text-overflow: ellipsis;
     white-space: nowrap;
-    cursor: pointer;
     box-shadow: inset 0 0 0 1px rgba(240, 116, 151, 0.035);
     transition: border-color 150ms ease, color 150ms ease, transform 150ms ease;
 }
 
-button:hover,
-button:focus-visible {
+a:hover,
+a:focus-visible {
     border-color: rgba(240, 116, 151, 0.55);
     color: #ff91af;
     transform: translateY(-1px);
-}
-
-button.copied {
-    background: #392d3a;
-    color: #ffabc1;
 }
 
 .keys {
@@ -153,7 +145,7 @@ button.copied {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    button {
+    a {
         transition: none;
     }
 }
